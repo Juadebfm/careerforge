@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Build software skills, organize job applications, and prepare for interviews with CareerForge."
+    />
+    <title>CareerForge | Homepage</title>
+    <link rel="icon" href="assets/logo/logo-main.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="basic-js-addendums.css" />
+    <link rel="stylesheet" href="sunday-class.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html" aria-label="CareerForge home">
+          <img class="brand__icon" src="assets/logo/logo-main.png" alt="" width="40" height="40" />
+          <span class="brand__name">CareerForge</span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Main navigation">
+          <a href="#capabilities">Features</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="pricing.html">Pricing</a>
+        </nav>
+
+        <div class="site-header__actions">
+          <a class="text-link" href="#sign-in">Log In</a>
+          <a class="button" href="#get-started">Start for Free</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section section--tint" aria-labelledby="hero-title">
+        <div class="container hero__content">
+          <p class="eyebrow hero__eyebrow"><span class="hero__eyebrow-dot" aria-hidden="true"></span><span>A structured career operating platform for aspiring engineers</span></p>
+          <h1 id="hero-title">Build the skills. Track the journey. Land the role.</h1>
+          <p class="hero__intro">
+            CareerForge helps aspiring developers build career-ready skills, organize job
+            applications, prepare for interviews, and get AI-powered career support in one place.
+          </p>
+          <div class="button-row">
+            <a class="button hero-button--primary" href="#get-started">Start for Free <img class="hero-button__icon" src="assets/icons/arrowright.png" width="13" height="13" alt="" aria-hidden="true" /></a>
+            <a class="button button--secondary hero-button--secondary" href="#capabilities">Explore CareerForge <img class="hero-button__icon" src="assets/icons/compass.png" width="16" height="16" alt="" aria-hidden="true" /></a>
+          </div>
+
+          <section class="workspace-preview" aria-label="CareerForge workspace preview">
+            <div class="workspace-preview__bar">
+              <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span>Daniel Okafor — CareerForge Workspace</span>
+              <span class="pill">Full-Stack Track</span>
+            </div>
+            <div class="workspace-preview__body">
+              <div class="metric-grid">
+                <article class="metric-card">
+                  <h2>Learning Progress</h2><p class="metric-card__value" id="learning-progress-value">4 of 6</p>
+                  <p>Milestones complete</p><div class="progress"><span id="learning-progress-bar" data-progress="4"></span></div>
+                  <button class="class-control class-control--small" id="complete-milestone" type="button">Complete a milestone</button>
+                </article>
+                <article class="metric-card">
+                  <h2>Tracked Opportunities</h2><p class="metric-card__value">12 Active</p>
+                  <p>Across top companies</p>
+                </article>
+                <article class="metric-card">
+                  <h2>Upcoming Interviews</h2><p class="metric-card__value">3 Scheduled</p>
+                  <p class="metric-card__next">Next: Northstar Labs</p>
+                </article>
+              </div>
+              <article class="current-milestone">
+                <div><p class="eyebrow">Current milestone</p><h2>Full-Stack JavaScript Developer</h2><p>JavaScript Fundamentals &amp; Async Patterns</p></div>
+                <a class="button button--small" href="#get-started">Continue Learning <img class="hero-button__icon" src="assets/icons/arrowright.png" width="13" height="13" alt="" aria-hidden="true" /></a>
+              </article>
+              <div class="application-preview">
+                <div class="section-heading section-heading--compact"><h2>Recent Applications</h2><a href="#get-started">View Pipeline</a></div>
+                <div class="application-filters" role="group" aria-label="Filter applications">
+                  <button class="class-control application-filter" type="button" data-filter="all">All</button>
+                  <button class="class-control application-filter" type="button" data-filter="interview">Interview</button>
+                  <button class="class-control application-filter" type="button" data-filter="applied">Applied</button>
+                  <button class="class-control application-filter" type="button" data-filter="saved">Saved</button>
+                </div>
+                <ul class="application-list">
+                  <li data-status="interview"><strong>Junior Frontend Developer</strong><span>Northstar Labs</span><span class="status status--interview">Interview</span><time datetime="2025-10-24">Oct 24</time></li>
+                  <li data-status="applied"><strong>Junior Full-Stack Dev</strong><span>StackBridge</span><span class="status status--applied">Applied</span><time datetime="2025-10-22">Oct 22</time></li>
+                  <li data-status="saved"><strong>React Developer</strong><span>CloudCore</span><span class="status status--saved">Saved</span><time datetime="2025-10-19">Oct 19</time></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="section" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="container">
+          <div class="section-heading">
+            <div><p class="eyebrow">Core capabilities</p><h2 id="capabilities-title">Everything an engineer needs to level up.</h2></div>
+            <p>A coherent toolkit replacing fragmented spreadsheets, disparate notes, and generic advice.</p>
+          </div>
+          <p class="card-move-instructions">Choose Move on two cards to swap their places.</p>
+          <div class="capability-grid">
+            <article class="feature-card feature-card--roadmap" data-position="1">
+              <button class="feature-card__move" type="button" aria-label="Select Learning Roadmap to move">Move</button>
+              <img class="feature-card__icon" src="assets/icons/learning-roadmap.png" width="48" height="48" alt="" aria-hidden="true" />
+              <h3>Learning Roadmap</h3>
+              <p>Track your progress through a structured software-development learning path.</p>
+              <a href="#how-it-works">Structured tracks <span aria-hidden="true">›</span></a>
+            </article>
+            <article class="feature-card feature-card--jobs" data-position="2">
+              <button class="feature-card__move" type="button" aria-label="Select Job Application Tracker to move">Move</button>
+              <img class="feature-card__icon" src="assets/icons/job-app.png" width="48" height="48" alt="" aria-hidden="true" />
+              <h3>Job Application Tracker</h3>
+              <p>Save opportunities and manage every application from Saved to Offer.</p>
+              <a href="#how-it-works">Kanban workflow <span aria-hidden="true">›</span></a>
+            </article>
+            <article class="feature-card feature-card--resources" data-position="3">
+              <button class="feature-card__move" type="button" aria-label="Select Career Resources to move">Move</button>
+              <img class="feature-card__icon" src="assets/icons/career-resources.png" width="48" height="48" alt="" aria-hidden="true" />
+              <h3>Career Resources</h3>
+              <p>Access practical technical, interview, and job-search resources.</p>
+              <a href="#how-it-works">Handcrafted templates <span aria-hidden="true">›</span></a>
+            </article>
+            <article class="feature-card feature-card--interview" data-position="4">
+              <button class="feature-card__move" type="button" aria-label="Select Interview Preparation to move">Move</button>
+              <img class="feature-card__icon" src="assets/icons/interview-prep.png" width="48" height="48" alt="" aria-hidden="true" />
+              <h3>Interview Preparation</h3>
+              <p>Prepare for interviews with structured, role-relevant guidance.</p>
+              <a href="#how-it-works">Behavioral &amp; technical <span aria-hidden="true">›</span></a>
+            </article>
+            <article class="feature-card feature-card--wide feature-card--coach" data-position="5">
+              <button class="feature-card__move" type="button" aria-label="Select AI Career Coach to move">Move</button>
+              <img class="feature-card__icon" src="assets/icons/ai-career-coach.png" width="48" height="48" alt="" aria-hidden="true" />
+              <h3>AI Career Coach</h3>
+              <p>Get career guidance using your learning progress, saved jobs, and CareerForge resources. Personalized suggestions keep your momentum focused.</p>
+              <form class="coach-demo-form" id="coach-demo-form">
+                <label class="visually-hidden" for="coach-question">Ask the AI Career Coach a question</label>
+                <input id="coach-question" type="text" placeholder="What should I study next?" />
+                <button class="class-control" type="submit">Ask</button>
+              </form>
+              <p class="coach-demo-reply is-hidden" id="coach-demo-reply" aria-live="polite"></p>
+              <a href="#how-it-works">Context-aware assistance <span aria-hidden="true">›</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tint" id="how-it-works" aria-labelledby="how-title">
+        <div class="container">
+          <div class="section-title"><p class="eyebrow">Structured journey</p><h2 id="how-title">How It Works</h2><p>A disciplined 4-stage progression designed to transition technical curiosity into an engineering offer.</p></div>
+          <ol class="steps-grid">
+            <li><span class="step-number">1</span><h3>Learn &amp; Prepare</h3><p>Build the skills required for your target role and prepare with role-relevant interview guidance.</p><a href="#get-started">Milestones &amp; Playbooks</a></li>
+            <li><span class="step-number">2</span><h3>Apply</h3><p>Save and organize relevant job opportunities aligned with your roadmap.</p><a href="#get-started">Pipeline</a></li>
+            <li><span class="step-number">3</span><h3>Track</h3><p>Follow each application seamlessly through every stage from Saved to Offer.</p><a href="#get-started">Status Flow</a></li>
+            <li><span class="step-number">4</span><h3>Improve</h3><p>Use CareerForge insights and contextual AI guidance to continuously advance.</p><a href="#get-started">Feedback Loop</a></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section--soft" aria-labelledby="preview-title">
+        <div class="container">
+          <div class="section-heading"><div><p class="eyebrow">Product preview</p><h2 id="preview-title">See how the platform organizes your work.</h2></div><p>Roadmap, application pipeline, and AI coaching in one workspace.</p></div>
+          <article class="roadmap-preview">
+            <div class="roadmap-preview__heading"><div><h3>Full-Stack Engineering Path</h3><p>Step-by-step milestones curated for modern developer specifications</p></div><span class="pill">Module 3 of 5 in progress</span></div>
+            <button class="class-control" id="toggle-roadmap-details" type="button">Show / hide module details</button>
+            <p class="roadmap-details is-hidden" id="roadmap-details">This milestone focuses on API design, database relationships, authentication, and secure backend patterns.</p>
+            <ol class="milestone-list">
+              <li class="milestone milestone--complete"><span aria-hidden="true">✓</span><div><h4>1. Core Computer Science &amp; JavaScript Fundamentals</h4><p>Data structures, scope chains, execution context, prototypes, and asynchronous patterns.</p></div><small>Completed</small></li>
+              <li class="milestone milestone--complete"><span aria-hidden="true">✓</span><div><h4>2. Modern Frontend Architecture</h4><p>Component hierarchies, state management, client routing, and DOM reconciliation.</p></div><small>Completed</small></li>
+              <li class="milestone milestone--current"><span aria-hidden="true">3</span><div><h4>3. API Design &amp; Scalable Backend Services</h4><p>REST conventions, relational schemas, ORM, authentication flows, and security best practices.</p></div><small>In Progress (72%)</small></li>
+              <li><span aria-hidden="true">4</span><div><h4>4. Cloud Deployment &amp; CI/CD Pipelines</h4><p>Docker containerization, GitHub Actions, cloud orchestration, and deployment.</p></div><small>Upcoming</small></li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="home-pricing-title">
+        <div class="container">
+          <div class="section-title"><p class="eyebrow">Transparent membership</p><h2 id="home-pricing-title">Simple, focused pricing</h2><p>Start for free, then upgrade when you require uninterrupted pipeline capacity and personalized AI guidance.</p></div>
+          <div class="plan-grid">
+            <article class="plan-card"><p class="eyebrow">Foundation</p><h3>Free</h3><p class="plan-price"><strong>$0</strong> / free forever</p><p>Essential roadmaps and structured tracking for individuals getting started.</p><ul><li>Learning Roadmap</li><li>Up to 5 tracked jobs</li><li>Basic Career Resources</li></ul><a class="button button--secondary" href="#get-started">Start for Free</a></article>
+            <article class="plan-card plan-card--featured"><p class="eyebrow">Recommended</p><h3>CareerForge Pro</h3><p class="plan-price"><strong>Price to be determined</strong></p><p>Comprehensive support with adaptive AI coaching and unrestricted tracking capacity.</p><ul><li>Unlimited job tracking</li><li>AI Career Coach</li><li>Premium Career Resources</li><li>Advanced Interview Preparation</li><li>Additional career tools</li></ul><a class="button" href="#get-started">Get Pro</a></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tint" id="get-started" aria-labelledby="home-cta-title">
+        <div class="container cta-panel"><span class="brand__mark" aria-hidden="true">✦</span><h2 id="home-cta-title">Ready to take control of your software career?</h2><p>Start tracking your learning journey, building role readiness, and organizing opportunities today.</p><a class="button" href="#sign-up">Start for Free <span aria-hidden="true">→</span></a></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand"><a class="brand" href="index.html"><img class="brand__icon" src="assets/logo/logo-main.png" alt="" width="40" height="40" /><span class="brand__name">CareerForge</span></a><p>The calm, disciplined career accelerator helping software engineers master the skills and interviews that matter.</p></div>
+        <nav class="footer-nav" aria-label="Product"><h2>Product</h2><a href="#capabilities">Roadmap Tracker</a><a href="#capabilities">Application Pipeline</a><a href="#capabilities">AI Career Coach</a><a href="pricing.html">Pricing</a></nav>
+        <nav class="footer-nav" aria-label="Company"><h2>Company</h2><a href="#how-it-works">How It Works</a><a href="#about">About Daniel's Story</a><a href="#about">Philosophy</a><a href="#support">Support &amp; Feedback</a></nav>
+        <nav class="footer-nav" aria-label="Resources"><h2>Resources</h2><a href="#resources">Full-Stack Curriculum</a><a href="#resources">Interview Checklists</a><a href="#resources">System Design Basics</a><a href="#resources">Community Guides</a></nav>
+      </div>
+      <div class="container footer-legal"><nav aria-label="Legal"><a href="#privacy">Privacy Policy</a><a href="#terms">Terms of Service</a><a href="#cookies">Cookie Preferences</a></nav><small>© 2025 CareerForge. All rights reserved.</small></div>
+    </footer>
+    <script src="site-interactions.js" defer></script>
+    <script src="saturday-class.js" defer></script>
+    <script src="sunday-class.js" defer></script>
+  </body>
+</html>
